@@ -41,6 +41,9 @@ while game_is_on:
         if ball.distance(r_paddle) < 50 or ball.distance(l_paddle) < 50:
             ball.hit()
 
+    if ball.xcor() > 385 or ball.xcor() < -385:
+        game_is_on = False
+
 
 
 
